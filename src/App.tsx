@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import "./style/App.css";
+import Accordion from "./component/Accordion";
+import Board from "./component/Board";
+const Greeting = ({ name }: { name: string }) => <h1>Let's start {name}!</h1>;
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Greeting name="DW SOLITAIRE" />
+        <Board row={3} col={4} />
+        {/* <Accordion preview={<h3>GODORI LICENSE</h3>}>
+          SAY THAT GODORI IS COOL!
+        </Accordion> */}
       </header>
+      />
     </div>
   );
-}
+};
 
 export default App;

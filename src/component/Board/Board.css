@@ -1,0 +1,33 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid {
+  border-top: 1px #ccc solid;
+  border-left: 1px #ccc solid;
+  padding-top: 150px;
+  padding-left: 100px;
+}
+
+.first {
+  border-top: 1px red solid;
+  border-left: 1px red solid;
+}
+
+.right-end {
+  border-right: 1px #ccc solid;
+}
+.bottom-end {
+  border-bottom: 1px #ccc solid;
+}
